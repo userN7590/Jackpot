@@ -23,12 +23,19 @@ Milestones and final phase settings are defined in config.yml, including amount 
 
 Concept	Application
 Object-Oriented Programming	Encapsulates milestone data via an internal Milestone class
+
 Bukkit BossBar API	Visual milestone + countdown progression in real time
+
 BukkitRunnable	Used for scheduled jackpot increments and end-phase countdown timers
+
 File I/O	Reads/writes persistent data to jackpotData.yml using YamlConfiguration
+
 Dependency Injection	Retrieves Vault economy provider using RegisteredServiceProvider
+
 Event Handling	Listens to player join events to add them to active BossBar
+
 PlaceholderAPI	Registers custom %jackpot_*% placeholders for real-time scoreboard data
+
 
 🧪 Example: Final Phase BossBar Logic
 String title = ChatColor.translateAlternateColorCodes('&', getConfig().getString("the_end.bar_title"));
